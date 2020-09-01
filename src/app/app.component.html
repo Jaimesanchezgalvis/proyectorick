@@ -1,0 +1,14 @@
+<div id="titulo">
+<!-- Aqui inicia el componente raiz -->
+<p>Este es el Componente Raiz</p>
+<!-- Estos son los componentes de la app -->
+  <app-titulo></app-titulo>
+  <app-menu></app-menu>
+  <app-personajes></app-personajes>
+<!-- llamado a la API -->
+  <ul *ngFor='let Characte of Character'>
+    <li> {{ Characte.name }} - {{ Characte.status }}</li>
+  </ul>
+<!-- Fin del componente raiz -->
+</div>
+
